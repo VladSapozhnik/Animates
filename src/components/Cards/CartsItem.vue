@@ -26,8 +26,8 @@
 </script>
 
 <template>
-  <v-col class="v-col-md-4 v-col-sm-6 v-col-12" :key="props.id" >
-    <div v-if="props.id" class="card d-flex position-relative flex-column">
+  <v-col class="v-col-md-4 v-col-sm-6 v-col-12" >
+    <div class="card d-flex position-relative flex-column">
       <router-link class="w-100 h-100" :to="{name: 'cardPage', params: {id: props.id}}">
         <img class="card_img v-img__img--cover" :src="props.img" :alt="props.title">
       </router-link>

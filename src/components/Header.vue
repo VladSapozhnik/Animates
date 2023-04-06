@@ -10,7 +10,7 @@ store.commit('UPDATE_SEARCH', search);
 <template>
   <div class="header bg-purple position-sticky mb-12">
     <v-container class="d-flex align-center">
-      <router-link to="/" class="header_logo font-weight-bold mr-10 text-uppercase text-decoration-none">
+      <router-link :to="{name: 'main'}" class="header_logo font-weight-bold mr-10 text-uppercase text-decoration-none">
         Animate
       </router-link>
       <v-text-field

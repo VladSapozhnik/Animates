@@ -5,7 +5,7 @@ import ProfilePage from "./components/ProfilePage.vue";
 
 const routes = [
     {
-        path: "/",
+        path: "/animate-project/",
         name: 'main',
         component: Main
     },

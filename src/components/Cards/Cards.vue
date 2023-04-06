@@ -18,9 +18,9 @@ defineExpose({
 <template>
   <v-container class="d-flex flex-wrap">
     <v-row>
-      <transition v-for="card of cards" name="card">
-        <CartsItem :id="card?.id" :img="card?.images.downsized.url" :title="card.title" :url="card?.images?.original?.url" :copy="isCopy"/>
-      </transition>
+      <transition-group v-for="card of cards" name="card">
+        <CartsItem :id="card?.id" v-if="card.id" :key="card.id" :img="card?.images.downsized.url" :title="card.title" :url="card?.images?.original?.url" :copy="isCopy"/>
+      </transition-group>
       <NotFoundCard v-if="!cards.length"/>
     </v-row>
   </v-container>

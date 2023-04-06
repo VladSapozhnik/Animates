@@ -17,7 +17,7 @@ const page = computed(() => store.getters.ANIMATES_PAGE(router.params.id));
 
 <template v-if="pending">
   <v-container>
-    <router-link to="/" class="mb-5 bg-purple pl-10 pr-10 pt-3 pb-3 text-decoration-none v-btn">Home</router-link>
+    <router-link :to="{name: 'main'}" class="mb-5 bg-purple pl-10 pr-10 pt-3 pb-3 text-decoration-none v-btn">Home</router-link>
     <div class="card-page mb-10">
       <h2 class="mb-5">{{ page[0]?.title }}</h2>
       <div class="card-page_img mb-4 w-50">
