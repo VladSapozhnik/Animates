@@ -44,6 +44,7 @@ const vitePWA = VitePWA({
 })
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/animate-project/',
   plugins: [vue(), vitePWA],
 
   optimizeDeps: {
