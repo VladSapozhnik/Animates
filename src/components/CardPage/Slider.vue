@@ -38,8 +38,8 @@ defineExpose({
       :breakpoints="{
           390: {
             spaceBetween: 5,
-            slidesPerView: 2,
-            slidesPerGroup: 2,
+            slidesPerView: 1,
+            slidesPerGroup: 1,
           },
           600: {
             spaceBetween: 16,
